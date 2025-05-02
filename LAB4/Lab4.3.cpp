@@ -44,7 +44,7 @@ public:
         cout << "How many cars do you want to enter? ";
         cin >> count;
         
-        cars = new Car[count]; // Dynamically allocate array of cars
+        cars = new Car[count]; 
         
         for (int i = 0; i < count; i++) {
             cout << "\nEnter model for car " << (i+1) << ": ";
@@ -55,7 +55,7 @@ public:
     }
     
     ~CarCollection() {
-        delete[] cars; // Free the memory
+        delete[] cars; 
         cout << "CarCollection destroyed" << endl;
     }
     
@@ -71,5 +71,5 @@ int main() {
     CarCollection myCollection;
     myCollection.displayCars();
     
-    return 0; // Collection will be destroyed when program exits
+    return 0; 
 }
